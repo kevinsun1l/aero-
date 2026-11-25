@@ -1,2 +1,1 @@
-# aero-
-helping the aerospace / space industry find their next role
+Upload every file in this folder to the root of your existing GitHub repository. Keep style.css and all HTML pages together. GitHub Pages uses index.html. Preview only; tax calculations not independently validated.
