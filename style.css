@@ -36,3 +36,30 @@ header{background:#080c15e8;backdrop-filter:blur(18px)}main{max-width:1160px}mai
   .home-hero .hero-copy{padding-bottom:20px}
   .home-hero .hero-photo-wrap{margin-top:22px;border-radius:22px 22px 0 0}
 }
+
+
+/* v10 full-site cinematic layout */
+.subpage-main{max-width:1160px;padding-top:22px}
+.page-hero{position:relative;overflow:hidden;border-radius:30px;padding:46px 34px;min-height:250px;margin:6px 0 30px;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(7,11,20,.88),rgba(10,18,33,.78));box-shadow:0 24px 60px rgba(0,0,0,.26)}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(5,10,18,.92) 0%,rgba(5,10,18,.82) 42%,rgba(5,10,18,.44) 68%,rgba(5,10,18,.22) 100%), url('hero-earth.jpg');background-size:cover;background-position:center center;opacity:.98}
+.page-hero > *{position:relative;z-index:1}
+.page-hero .eyebrow{display:inline-block;margin-bottom:6px;color:#b8d5ff}
+.page-hero h1{max-width:780px;margin:8px 0 14px;font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-.06em}
+.page-hero .intro,.page-hero p:not(.small){max-width:720px;margin:0;font-size:clamp(17px,1.8vw,20px);line-height:1.62;color:#d7dfef}
+.page-hero .panel{position:relative;z-index:2;margin-top:24px;background:rgba(16,23,34,.72);backdrop-filter:blur(16px)}
+.page-hero.page-hero-companies::before{background-position:center 58%}
+.page-hero.page-hero-relocation::before{background-position:center 62%;filter:saturate(1.05)}
+.page-hero.page-hero-contracting::before{background-position:center 50%;filter:contrast(1.06) saturate(.95)}
+.page-hero.page-hero-salaries::before{background-position:center 48%;filter:saturate(1.1)}
+.page-hero.page-hero-insights::before{background-position:center 40%;filter:brightness(.92)}
+.page-hero.page-hero-personal::before{background-position:center 44%;opacity:.92}
+.page-hero.page-hero-sources::before{background-position:center 35%;opacity:.9}
+.profile-intro.page-hero{display:grid;grid-template-columns:minmax(0,1.2fr) 260px;gap:30px;align-items:center}
+.profile-intro.page-hero::before{background-image:linear-gradient(90deg,rgba(5,10,18,.92) 0%,rgba(5,10,18,.86) 44%,rgba(5,10,18,.52) 72%,rgba(5,10,18,.18) 100%), url('hero-earth.jpg');background-position:center 52%}
+.profile-intro.page-hero .intro{margin-bottom:10px}
+.profile-photo{position:relative;z-index:1;margin:0;text-align:center}
+.profile-photo img{width:100%;max-width:240px;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:28px;border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 38px rgba(0,0,0,.28)}
+.profile-photo figcaption{margin-top:10px;color:var(--muted);font-size:14px}
+.chapter{max-width:840px}
+@media(max-width:900px){.profile-intro.page-hero{grid-template-columns:1fr}.profile-photo{justify-self:start}}
+@media(max-width:650px){.page-hero{padding:28px 18px;min-height:220px;margin-bottom:22px;border-radius:24px}.page-hero h1{font-size:clamp(34px,10vw,52px)}.page-hero .intro,.page-hero p:not(.small){font-size:16px}.subpage-main{padding-top:14px}}
